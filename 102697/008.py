@@ -1,24 +1,19 @@
-from lib.euclidean_distance import euclidean_distance
+from math import pow, sqrt
 
 
 def main() -> None:
-    D = int(input())
-    _p: list[int] = []
-    _q: list[int] = []
+    dimension = int(input())
+    distance_squared = 0
 
-    for _ in range(D):
+    for _ in range(dimension):
         pi = int(input())
         qi = int(input())
 
-        _p.append(pi)
-        _q.append(qi)
+        distance_squared += pow(qi - pi, 2)
 
-    p = tuple(_p)
-    q = tuple(_q)
+    distance = sqrt(distance_squared)
 
-    d = euclidean_distance(p, q)
-
-    print(d)
+    print(distance)
 
 
 if __name__ == "__main__":
