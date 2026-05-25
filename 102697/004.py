@@ -1,3 +1,6 @@
+from lib.sum_of_angles_in_polygon import sum_of_angles_in_polygon
+
+
 def main() -> None:
     T = int(input())
     ans: list[int] = []
@@ -5,7 +8,7 @@ def main() -> None:
     for _ in range(T):
         n = int(input())
 
-        ans.append(180 * (n - 2) if n >= 3 else 0)
+        ans.append(sum_of_angles_in_polygon(n))
 
     for a in ans:
         print(a)
