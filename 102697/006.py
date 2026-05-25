@@ -7,7 +7,10 @@ def main() -> None:
     x2 = int(input())
     y2 = int(input())
 
-    N = euclidean_distance(x1, y1, x2, y2)
+    p = (x1, y1)
+    q = (x2, y2)
+
+    N = euclidean_distance(p, q)
 
     print(N)
 
