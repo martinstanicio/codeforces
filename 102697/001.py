@@ -1,7 +1,9 @@
 def main() -> None:
     n = int(input())
 
-    print(n * n)
+    n_squared = n * n
+
+    print(n_squared)
 
 
 if __name__ == "__main__":

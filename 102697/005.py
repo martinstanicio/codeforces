@@ -1,14 +1,14 @@
 def main() -> None:
-    N = int(input())
-    ans = ""
+    number = int(input())
+    answer = ""
 
-    if N % 3 == 0:
-        ans += "Fizz"
+    if number % 3 == 0:
+        answer += "Fizz"
 
-    if N % 5 == 0:
-        ans += "Buzz"
+    if number % 5 == 0:
+        answer += "Buzz"
 
-    print(ans)
+    print(answer)
 
 
 if __name__ == "__main__":

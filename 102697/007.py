@@ -2,16 +2,17 @@ from lib.sexagesimal_time_to_seconds import sexagesimal_time_to_seconds
 
 
 def main() -> None:
-    _h = int(input())
-    m = int(input())
-    s = int(input())
-    a = input()
+    hours = int(input())
+    minutes = int(input())
+    seconds = int(input())
+    meridiem = input()  # AM | PM
 
-    h = _h + (12 if a == "PM" else 0)
+    if meridiem == "PM":
+        hours += 12
 
-    t = sexagesimal_time_to_seconds(h, m, s)
+    total_seconds = sexagesimal_time_to_seconds(hours, minutes, seconds)
 
-    print(t)
+    print(total_seconds)
 
 
 if __name__ == "__main__":

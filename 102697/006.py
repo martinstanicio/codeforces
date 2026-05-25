@@ -2,17 +2,17 @@ from lib.euclidean_distance import euclidean_distance
 
 
 def main() -> None:
-    x1 = int(input())
-    y1 = int(input())
-    x2 = int(input())
-    y2 = int(input())
+    px = int(input())
+    py = int(input())
+    qx = int(input())
+    qy = int(input())
 
-    p = (x1, y1)
-    q = (x2, y2)
+    p = (px, py)
+    q = (qx, qy)
 
-    N = euclidean_distance(p, q)
+    distance = euclidean_distance(p, q)
 
-    print(N)
+    print(distance)
 
 
 if __name__ == "__main__":

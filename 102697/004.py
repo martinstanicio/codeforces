@@ -2,15 +2,16 @@ from lib.sum_of_angles_in_polygon import sum_of_angles_in_polygon
 
 
 def main() -> None:
-    T = int(input())
-    ans: list[int] = []
+    test_cases = int(input())
+    answers: list[int] = []
 
-    for _ in range(T):
-        n = int(input())
+    for _ in range(test_cases):
+        sides = int(input())
+        sum_of_angles = sum_of_angles_in_polygon(sides)
 
-        ans.append(sum_of_angles_in_polygon(n))
+        answers.append(sum_of_angles)
 
-    for a in ans:
+    for a in answers:
         print(a)
 
 

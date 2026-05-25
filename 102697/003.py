@@ -1,12 +1,13 @@
 def main() -> None:
-    n = int(input())
-    ans = 0
+    number_of_triangles = int(input())
+    sum_of_perimeters = 0
 
-    for _ in range(n):
-        t = int(input())
-        ans += t * 3
+    for _ in range(number_of_triangles):
+        side_length = int(input())
+        perimeter = side_length * 3
+        sum_of_perimeters += perimeter
 
-    print(ans)
+    print(sum_of_perimeters)
 
 
 if __name__ == "__main__":
